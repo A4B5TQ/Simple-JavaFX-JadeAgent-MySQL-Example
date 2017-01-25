@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="748.0"
+            prefWidth="644.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="app.controllers.EditController">
+
+    <content>
+        <Pane>
+            <children>
+                <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="14.0" spacing="30.0">
+                    <children>
+                        <Label prefHeight="35.0" prefWidth="127.0" text="Description:">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </Label>
+                        <Label text="Type:">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets top="120.0"/>
+                            </VBox.margin>
+                        </Label>
+                        <Label text="Weight Type:">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <Label text="Weight Value:">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <Label text="Brand Name:">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <Label text="Brand Country:">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <Label text="Name:">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <Label text="Price:">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <Label text="Expiration Date:">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox layoutX="195.0" layoutY="14.0" prefWidth="434.0">
+                    <children>
+                        <TextArea fx:id="descriptionField" prefHeight="154.0" prefWidth="615.0" wrapText="true">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextArea>
+                        <TextField fx:id="typeField" minHeight="35.0">
+                            <VBox.margin>
+                                <Insets top="35.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextField>
+                        <TextField fx:id="weightTypeField" minHeight="35.0">
+                            <VBox.margin>
+                                <Insets top="30.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextField>
+                        <TextField fx:id="weightValueField" minHeight="35.0">
+                            <VBox.margin>
+                                <Insets top="30.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextField>
+                        <TextField fx:id="brandNameField" minHeight="35.0">
+                            <VBox.margin>
+                                <Insets top="30.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextField>
+                        <TextField fx:id="brandCountryField" minHeight="35.0">
+                            <VBox.margin>
+                                <Insets top="30.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextField>
+                        <TextField fx:id="nameField" minHeight="35.0">
+                            <VBox.margin>
+                                <Insets top="30.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextField>
+                        <TextField fx:id="priceField" minHeight="35.0">
+                            <VBox.margin>
+                                <Insets top="30.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextField>
+                        <DatePicker fx:id="dateField" minHeight="35.0" prefHeight="35.0" promptText="SELECT DATE"
+                                    showWeekNumbers="true">
+                            <VBox.margin>
+                                <Insets top="30.0"/>
+                            </VBox.margin>
+                        </DatePicker>
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#edit" prefHeight="35.0"
+                                prefWidth="96.0" text="Edit" translateX="305.0" translateY="-35.0">
+                            <font>
+                                <Font size="16.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+    </content>
+</ScrollPane>
